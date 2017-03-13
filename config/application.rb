@@ -1,6 +1,11 @@
 require 'active_record'
 require 'sqlite3'
 require 'yaml'
+require "sinatra"
+require "sinatra/reloader"
+require "sinatra/activerecord"
+require "sinatra/base"
+
 
 # This is some boilerplate code to read the config/database.yml file
 # And connect to the database

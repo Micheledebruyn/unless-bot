@@ -1,0 +1,18 @@
+defaults: &defaults
+  APP_NAME: "unless-bot"
+  APP_SECRET: "985d22c5644699c52947b2b4914cb316"
+  ACCESS_TOKEN: "EAASy4LSEIFQBAG5hess10lCtAgoKBOOXk5LzKYOwMriiZBnzvU7vPAVeuiBRWXZAyJB6eQFqpgpUz610RcoFZBEOvD0HZAVqy1Huk5BZBs5PMZC2rVfOV5TXjicDYIhNcRO4DB9ed1oxScLtqiePx2x7l8tmOmkTgDaLVIZC6yCaAZDZD"
+  VERIFY_TOKEN: "unless_bot_verify_token"
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+staging:
+  <<: *defaults
+
+production:
+  <<: *defaults
+

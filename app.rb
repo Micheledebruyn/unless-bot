@@ -1,8 +1,11 @@
 require_relative "config/application"
-require "sinatra"
-require "sinatra/reloader"
-require "sinatra/activerecord"
 
-get "/" do
-  "Hello world!"
+class Application < Sinatra::Base
+	configure do
+		enable :logging, :show_exceptions, :dump_errors, :clean_trace, :static
+	end
+
+	get '/bot' do
+		params['hub.challenge'] if ENV["VERIFY_TOKEN"] == params['hub.verify_token']
+	end
 end
