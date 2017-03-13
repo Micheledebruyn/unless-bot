@@ -1,5 +1,4 @@
 require './app'
-require_relative 'load_secrets'
 
 # run both Sinatra and facebook-messenger on /webhook
 map("/webhook") do
