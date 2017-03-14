@@ -20,7 +20,7 @@ Bot.on :message do |message|
     attachment: {
       type: 'image',
       payload: {
-        url: Api.new.searcher(message.text.gsub!(/\P{ASCII}/, '').strip)
+        url: Api.new.searcher(message.text.gsub(/\P{ASCII}/, '').strip)
       }
     }
     )
